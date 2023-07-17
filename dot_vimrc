@@ -12,4 +12,5 @@ set expandtab
 
 set hlsearch
 set incsearch
+set showmatch
 set showcmd
