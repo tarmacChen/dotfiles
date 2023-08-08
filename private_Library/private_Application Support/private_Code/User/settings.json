@@ -3,7 +3,7 @@
   "window.autoDetectColorScheme": true,
   "editor.rulers": [80],
   "editor.minimap.enabled": true,
-  "editor.fontSize": 12,
+  "editor.fontSize": 11,
   "editor.fontFamily": "SF Mono, Monaco, monospace",
   "editor.fontWeight": "600",
   "editor.fontLigatures": false,
@@ -12,11 +12,15 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "workbench.iconTheme": "vscode-icons",
+  "plantuml.render": "PlantUMLServer",
+  "plantuml.server": "http://localhost:8000",
   "plantuml.previewAutoUpdate": true,
   "[python]": {
     "editor.formatOnType": true
   },
   "vim.useCtrlKeys": true,
+  "vim.showMarksInGutter": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -40,5 +44,20 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.yml": "ytt"
+  },
+  "[ytt]": {
+    "editor.tabSize": 2,
+    "editor.useTabStops": false
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.colorTheme": "Default Light Modern",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
   }
 }
