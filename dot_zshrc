@@ -7,5 +7,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export CONFIGS_ROOT="$HOME/Projects/ProposalNavigator/ProposalNavigator/configs/"
-alias yttb="cd "$CONFIGS_ROOT" && ytt -f products/ -f values/ -f fields/ -f inputs/ -f fields-target/ --output-files output/ --debug"
+export CONFIGS_ROOT="$HOME/Projects/ProposalNavigator/ConfigService/configs/"
+alias yttb="cd "$CONFIGS_ROOT" && ytt -f configs/ -f values/ -f excel/ --output-files output/ --debug"
+alias ll="ls -al"
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:/$GOPATH/bin
+export PATH=$PATH:/usr/local/flutter/bin
+export ANDROID_SDK_DIR=/Users/tarmac/Library/Android/sdk
+export PATH=$PATH:/$ANDROID_SDK_DIR/cmdline-tools/latest/bin
