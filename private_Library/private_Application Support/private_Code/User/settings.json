@@ -3,8 +3,9 @@
   "window.autoDetectColorScheme": true,
   "editor.rulers": [80],
   "editor.minimap.enabled": true,
-  "editor.fontSize": 11,
-  "editor.fontFamily": "SF Mono, Monaco, monospace",
+  "editor.fontSize": 12,
+  // "editor.fontFamily": "SF Mono, Monaco, monospace",
+  "editor.fontFamily": "Monaco, 'Courier New', monospace",
   "editor.fontWeight": "600",
   "editor.fontLigatures": false,
   "editor.wordWrap": "bounded",
@@ -20,6 +21,9 @@
   },
   "vim.useCtrlKeys": true,
   "vim.showMarksInGutter": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": "[<C-r>]", "commands": ["redo"] }
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -56,8 +60,9 @@
     "editor.useTabStops": false
   },
   "git.openRepositoryInParentFolders": "never",
+  "yaml.schemas": {
+    "schema/excel-spec.json": ["*.yaml"]
+  },
   "workbench.colorTheme": "Default Light Modern",
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
-  }
+  "dart.flutterSdkPath": "/usr/local/flutter"
 }
